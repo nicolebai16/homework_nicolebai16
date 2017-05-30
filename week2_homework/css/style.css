@@ -1,0 +1,100 @@
+/** here I tried to clean the default font-size, so I can over-write the size for h3, h4 etc, but didn't work... so I changed all the h titles to p, and add class to adjust font-size and color.**/
+body {
+	font-size: 0;
+}
+
+/** here I was trying to make the icon bigger, didn't work.. **/
+i {
+	width: 30px;
+	height: 30px;
+}
+
+button {
+	margin: 10px auto;
+}
+
+#header {
+	height: 50px;
+	width: 100%
+}
+
+/** I tired to apply background color and add border-bottom to header, nothing happened...**/
+#header .container-full {
+	background-color: #f1f1f1;
+	border-bottom: 1px solid black;
+}
+
+#navbar {
+	border: 1px solid black;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#search input {
+	width: 100%;
+}
+
+#body {
+	background-color: #f1f1f1;
+}
+
+#body .container {
+	background-color: white;
+}
+
+.row {
+	margin: 10px 0;
+}
+.container-title {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.nav {
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin: 10px;
+	text-align: center;
+}
+
+.left {
+	float: left;
+}
+
+.center {
+	display: inline-block;
+	margin: 10px auto;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.featured-banner {
+	margin: 10px 0;
+}
+
+.video-title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #167ac6;
+	line-height: 15px;
+}
+
+.author {
+	font-size: 12px;
+	color: gray;
+	line-height: 2px;
+}
+
+.views {
+	font-size: 10px;
+	color: #877676;
+	line-height: 2px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+    <body>
+            <div id="header" class="container-full">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <div id="navbar" class="pull-right">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-1">
+                        <img src="image/youtube.png"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <!--I tried .search and #search input {width:100%}, didn't work-->
+                        <div id="search" class="search pull-right">
+                            <input type="text"/>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="upload pull-right">
+                            <i class="fa fa-upload" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-1">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-1">
+                        <img src="image/myaccount.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <!--Coudn't center the 3 nav elements-->
+            <div id="navi" class="container-full">
+                <div class="row">
+                    <div class="col-xs-1 col-xs-offset-4">
+                        <div class="nav left">Home</div>
+                    </div>
+                    <div class="col-xs-1">
+                        <div class="nav center">Trending</div>
+                    </div>
+                    <div class="col-xs-1">
+                        <div class="nav right">Subscriptions</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div id="body" class="container-full">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <img class="featured-banner" src="image/banner.jpg">
+                    </div>
+                </div>
+                <!--Here I tried to center 5 videos within the container, but I couldn't get it close to the edge-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1">
+                            <p class="container-title">Recommended</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-xs-offset-1">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/osOj0H5gWkk?list=PLVlxnH_UB7bBXExo4BVH7-sZHVNsqOSdt">
+                            </iframe>                            
+                            <p class="video-title">Video title goes here</p>
+                            <p class="author">Author goes here</p>
+                            <p class="views">100,000 views · 2 days ago</p>
+                        </div>
+                        <div class="col-xs-2">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/osOj0H5gWkk?list=PLVlxnH_UB7bBXExo4BVH7-sZHVNsqOSdt">
+                            </iframe></br>
+                            <p class="video-title">Video title goes here</p>
+                            <p class="author">Author goes here</p>
+                            <p class="views">100,000 views · 2 days ago</p>
+                        </div>
+                        <div class="col-xs-2">                            
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/osOj0H5gWkk?list=PLVlxnH_UB7bBXExo4BVH7-sZHVNsqOSdt">
+                            </iframe></br>
+                            <p class="video-title">Video title goes here</p>
+                            <p class="author">Author goes here</p>
+                            <p class="views">100,000 views · 2 days ago</p>
+                        </div>
+                        <div class="col-xs-2">                            
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/osOj0H5gWkk?list=PLVlxnH_UB7bBXExo4BVH7-sZHVNsqOSdt">
+                            </iframe></br>
+                            <p class="video-title">Video title goes here</p>
+                            <p class="author">Author goes here</p>
+                            <p class="views">100,000 views · 2 days ago</p>
+                        </div>
+                        <div class="col-xs-2">                            
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/osOj0H5gWkk?list=PLVlxnH_UB7bBXExo4BVH7-sZHVNsqOSdt">
+                            </iframe>
+                            <p class="video-title">Video title goes here</p>
+                            <p class="author">Author goes here</p>
+                            <p class="views">100,000 views · 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-xs-offset-1">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c8CY8yPavtM?list=PLVlxnH_UB7bBXExo4BVH7-sZHVNsqOSdt">
+                            </iframe>                            
+                            <p class="video-title">Video title goes here</p>
+                            <p class="author">Author goes here</p>
+                            <p class="views">100,000 views · 2 days ago</p>
+                        </div>
+                        <div class="col-xs-2">                            
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c8CY8yPavtM?list=PLVlxnH_UB7bBXExo4BVH7-sZHVNsqOSdt">
+                            </iframe>
+                            <p class="video-title">Video title goes here</p>
+                            <p class="author">Author goes here</p>
+                            <p class="views">100,000 views · 2 days ago</p>
+                        </div>
+                        <div class="col-xs-2">                           
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c8CY8yPavtM?list=PLVlxnH_UB7bBXExo4BVH7-sZHVNsqOSdt">
+                            </iframe>                            
+                            <p class="video-title">Video title goes here</p>
+                            <p class="author">Author goes here</p>
+                            <p class="views">100,000 views · 2 days ago</p>
+                        </div>
+                        <div class="col-xs-2">                            
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c8CY8yPavtM?list=PLVlxnH_UB7bBXExo4BVH7-sZHVNsqOSdt">
+                            </iframe>                            
+                            <p class="video-title">Video title goes here</p>
+                            <p class="author">Author goes here</p>
+                            <p class="views">100,000 views · 2 days ago</p>
+                        </div>
+                        <div class="col-xs-2">                            
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c8CY8yPavtM?list=PLVlxnH_UB7bBXExo4BVH7-sZHVNsqOSdt">
+                            </iframe>                            
+                            <p class="video-title">Video title goes here</p>
+                            <p class="author">Author goes here</p>
+                            <p class="views">100,000 views · 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1">
+                            <button type="button" class="btn btn-default pull-right">Show more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
