@@ -1,0 +1,41 @@
+/**style.css**/
+
+#goodwords {
+	margin-top: 250px;
+}
+
+#navbar {
+	background-color: #C8A330;
+}
+
+#testimonial1 {
+	background: #000 url("../image/ZHAO-0209.jpg") center top;
+	z-index: 10;
+	height: 500px;
+	text-align: center;
+	color: white;
+	margin: 50px 0;
+}
+
+#testimonial2 {
+	background: #000 url("../image/ZHAO-0211.jpg") center top;
+	z-index: 10;
+	height: 500px;
+	text-align: center;
+	color: white;
+	margin: 50px 0;
+}
+
+#testimonial3 {
+	background: #000 url("../image/ZHAO-0213.jpg") center top;
+	z-index: 10;
+	height: 500px;
+	text-align: center;
+	color: white;	
+	margin: 50px 0;
+}
+
+.navbar-brand {
+	color: solid white;
+}
+
