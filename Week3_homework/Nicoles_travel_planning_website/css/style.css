@@ -1,0 +1,171 @@
+/** ADD-ON STYLE.CSS **/
+/** Travel site, updated June 3 @ The Springs**/
+
+a {
+  color: #ffbe9e;
+}
+
+section #contact {
+  	background-image: url('../img/contact-bg.png');
+  	background-position: center;
+  	background-repeat: repeat;
+}
+
+#brand-name {
+	color: #ffbe9e;
+	font-size: 40px;
+}
+
+#steps {
+    background-image: url('..img/steps-bg.jpg');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#mainNav {
+	color: gray;
+}
+
+.text-primary {
+  	color: #ffbe9e;
+}
+
+.btn-primary {
+  	color: white;
+  	background-color: #;
+  	border-color: #ffbe9e;
+  	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	text-transform: uppercase;
+  	font-weight: 700;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #ffbe9e;
+  border-color: #ffbe9e;
+}
+.btn-primary .badge {
+  color: #ffbe9e;
+  background-color: white;
+}
+.btn-xl {
+  color: white;
+  background-color: #ffbe9e;
+  border-color: #ffbe9e;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+  background-color: #ffbe9e;
+  border-color: #ffbe9e;
+}
+.btn-xl .badge {
+  color: #ffbe9e;
+  background-color: white;
+}
+.navbar-custom {
+  background-color: #222222;
+  border-color: transparent;
+}
+.navbar-custom .navbar-brand {
+  color: #ffbe9e;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+
+.navbar-custom .navbar-toggle {
+  background-color: #ffbe9e;
+  border-color: #ffbe9e;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #ffbe9e;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  color: #ffbe9e;
+  outline: none;
+}
+.navbar-custom .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #ffbe9e;
+}
+
+.timeline > li .timeline-image {
+	background-color: #ffbe9e;
+}
+
+.navbar-brand {
+	color: red;
+}
+
+.navbar-nav {
+	color: gray;
+}
+/** Doesn't work **/
+
+.banner-button {
+	background-color: #ffbe9e;
+	border-radius: 5px;
+	border: 1px solid #ffbe9e;
+}
+
+.name-left {
+	text-align: left;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.my-thumbnail {
+	height: 280px;
+}
+
+.red {
+	color: #ffbe9e;
+}
+
+.gray {
+	color: #fed136;
+	font-size: 30px;
+}
+
