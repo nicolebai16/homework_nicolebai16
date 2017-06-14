@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+}
+
+#disappear {
+  margin: 25px auto;
+  display: block;
+}
+
+#changeColor {
+  margin: 25px auto;
+  display: block;
+}
+
+#changeShape {
+  margin: 25px auto;
+  display: block;
+}
+
+#circle1, #circle2, #circle3 {
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 25px auto;
+  transition: background 500ms;
+}
+
+#catSwag {
+  backgroung-image: url ("https://image.spreadshirtmedia.com/image-server/v1/compositions/1003331508/views/1,width=150,height=150,appearanceId=231,backgroundColor=E8E8E8,version=1473664654/glasses-cat-t-shirts-men-s-premium-t-shirt.jpg");
+  border-radius: 50%;
+  margin: 25px auto;
+  transition: background 500ms;
+}
