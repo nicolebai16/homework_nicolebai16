@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="MerriMarri helps Chinese couple to explore the western wedding culture and find the perfect planner for their dream destination wedding in the U.S.">
+    <meta name="author" content="Nicole Bai">
+
+    <title>MerriMarri.com</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header>
+        <nav class="navbar navbar-default" data-spy="affix">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                  <img id="logo" src="img/logo.png"/>
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#planners">Top Planners</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#procedure">Procedure</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
+              
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+    </header>
+    <div id="content">
+        <div id="home" class="container-full">
+            <div class="parallax">
+                <h1 id="tagline">
+                    Your Dream Wedding </br> 
+                    Starts Here.
+                </h1>
+            </div>
+        </div>
+        <div id="planners" class="container-full">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Top Rated Planners</h2>
+                    <div id="planner" class="row"></div>
+                    <div id="gallery" class="row">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="procedure" class="container-full">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Procedure</h2>
+                    <!--Put procedure flowchart here// copy from agency template-->
+                </div>
+            </div>
+        </div>
+
+        <div id="search" class="container-full">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Search for your dream venues</h2>
+                    <!-- FORM FOR ADDRESS LOOKUP -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Address Lookup Form</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <input id="address" class="form-control" type="text" value="Los Angeles, CA" placeholder="Where do you want to have your dream wedding at?">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary pull-right" id="lookup">
+                                    <i class="fa fa-search"></i> Lookup
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- GOOGLE MAP -->
+                            WTF
+                            <div id="map">Hi mom</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="container-full">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Contact Us</h2>
+                    <h3>Get in touch with your planner</h3>
+                    <!--Insert Form Here// On submit, send email to info.merrimarri@gmail.com-->
+                    <form method="POST" action="http://formspree.io/info.merrimarri@gmail.com">
+                        <input class="form-input" type="email" name="email" placeholder="Your email"></br>
+                        <input class="form-input" type="name" name="name" placeholder="Your name"></br>
+                        <textarea name="message" placeholder="Your message"></textarea></br>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        Your perfect destination wedding, starts at Merri Marri.
+        &copy; Us 2017
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuEg9oQgp88LqS8gE6TFJxsmM7stdskdI&libraries=places&callback=loadMap" async defer></script>
+        <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+</body>
+</html>
