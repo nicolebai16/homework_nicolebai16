@@ -125,10 +125,9 @@ $(function(){
 
 //The Callback function we tell Google to call once the map script is loaded
 var map;
-var position;
-var service;
-var keyword;
+var infowindow
 function loadMap(position, keyword) {
+    console.log("HERE")
     if(!position)
     {
         position = { lat: 34.0478914, lng: -118.2401423 };
@@ -143,7 +142,7 @@ function loadMap(position, keyword) {
     });
 
     infowindow = new google.maps.InfoWindow();
-    service = new google.maps.places.PlacesService(map);
+    var service = new google.maps.places.PlacesService(map);
     service.textSearch({location: position, radius: 500, query:keyword}, callback);
 }
 function callback(results, status) {

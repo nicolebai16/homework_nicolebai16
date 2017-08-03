@@ -49,11 +49,12 @@ textarea {
     background-size: cover;
     opacity: 0.8;
 }
+
 #map {
-    height： 300px;
+    height: 400px;
     width: 100%;
-    border: 1px solid red;
 }
+
 .affix {
     width: 100%;
     top: 0;
