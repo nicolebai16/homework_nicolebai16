@@ -20,7 +20,7 @@ $(function(){
                 },
                 {
                     'file': 'michelle.jpg',
-                    'name': 'Michelle Jiang',
+                    'name': 'Michelle Tu',
                     'title': 'Creative Planning',
                     'description': 'Best wedding planner in SoCal.'
                 },
@@ -33,7 +33,24 @@ $(function(){
             ]
         },
         'procedure': {
-            'title': 'Procedure'
+            'title': 'Western Wedding Programs',
+            'events': [
+                {
+                    'file': '3.jpg',
+                    'program': 'Reception',
+                    'description': 'BA wedding reception is a party usually held after the completion of a marriage ceremony as hospitality for those who have attended the wedding, hence the name reception: the couple receives society, in the form of family and friends, for the first time as a married couple. Hosts provide their choice of food and drink, although a wedding cake is popular.'
+                },
+                {
+                    'file': '2.jpg',
+                    'program': 'Cocktail Hour',
+                    'description': 'The cocktail hour is a chance for wedding guests to mingle and catch up with old friends and family members, enjoy some tasty food and drinks, and just chill before the party kicks into full gear. Many times, this is also when the reception area is still being readied, so guests are often confined to an area.'
+                },
+                {
+                    'file': '1.jpg',
+                    'program': 'Ceremony',
+                    'description': 'The wedding ceremony is perhaps the most important part of your wedding. Most wedding ceremonies involve an exchange of marriage vows by the couple, presentation of a gift (offering, ring(s), symbolic item, flowers, money), and a public proclamation of marriage by an authority figure. '
+                }             
+            ]
         },
         'search': {
             'title': 'Search Venues'
@@ -51,18 +68,7 @@ $(function(){
             $('#tagline').fadeIn(2000);
         });
 
-        //load gallery
-        $.each(pages.planners.gallery, function(key, item)
-        {
-            var s = "";
-            s += '<div class="col-xs-12 col-sm-6">';
-            s += '  <img src="' + item.image + '" class="img-thumbnail"/>';
-            s += '<h2>' + item.info + '</h2>';
-            s += '</div>';
-            $('#gallery').append(s);
-        });
-
-        //load search venues
+        //load planners
         $.each(pages.planners.planner, function(key, planner){
             var s = "";
             s += '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">';
@@ -76,10 +82,37 @@ $(function(){
 
             $('#planner').append(s);
         });
+
+        //load procedure
+        $.each(pages.procedure.events, function(key, events){
+            var s = "";
+            s += '<li>';
+            s += '  <div class="timeline-image">';
+            s += '      <img class="img-circle img-responsive" src="./img/' + events.file + '"/>';
+            s += '  </div>';
+            s += '   <div class="timeline-panel">';
+            s += '      <div class="timeline-heading">';
+            s += '          <h3 class="subheading">' + events.program + '</h3>';
+            s += '      </div>';
+            s += '      <div class="timeline-body">';
+            s += '          <p class="text-muted">' + events.description + '</p>';
+            s += '      </div>';
+            s += '  </div>';
+            s += '</li>';
+
+            $('#events').prepend(s);
+        });
+
+        //Here I tried to do a hover statement, when hover on li, add or replace class=timeline-inverted
+        /*$('li').mouseover(function(){
+            $( this ).replaceWith('<li class="timeline-inverted">');
+        } function(){
+            $( this ).replaceWith('<li>'); 
+        });*/
     }
 
 
-/*!!!!!!!!!!!!!!!!!!!!! PROBLEM SHOOTING*/
+
     //Search map function from previous class (API call)
     $('#lookup').on('click', function(clickEvent){
         var encoded_address = encodeURIComponent($('#address').val());
@@ -127,7 +160,6 @@ $(function(){
 var map;
 var infowindow
 function loadMap(position, keyword) {
-    console.log("HERE")
     if(!position)
     {
         position = { lat: 34.0478914, lng: -118.2401423 };
